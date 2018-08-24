@@ -12,16 +12,16 @@
         <fieldset>
             <legend>Personal Data</legend>
             <label for="dui">DUI</label>
-            <input type="text" name = "dui" placeholder="048134128" maxlength="9" minlength= "9" required />
+            <input type="text" name = "dui" placeholder="048134128" pattern="[0-9]{9}" required />
             <label for="nombre">First Name:</label>
-            <input type="text" name= "nombre" placeholder="First Name" required/>
+            <input type="text" name= "nombre" placeholder="First Name" pattern="[a-z]+"  required/>
             <label for="apellido">Last Name:</label>
-            <input type="text" name = "apellido" placeholder="Last Name" required/>
+            <input type="text" name = "apellido" placeholder="Last Name" pattern="[a-z]+" required/>
             <label for="genero">Gender</label>
-            <input name="gender" value="M" type="radio" required>M</input>
-            <input name="gender" value="F" type="radio" required>F</input><br><br>
+            <input name="gender" value="M" type="radio" required>M
+            <input name="gender" value="F" type="radio" required>F<br><br>
             <label for="numero">Contact Number:</label>
-            <input type="text" name ="contacto" required/>
+            <input type="text" name ="contacto" pattern="[0-9]{8}" required/>
             <label for="cumpleaños">Birthdate:</label>
             <input type="date" required>
             <label for="estado_civil">Civil Status</label>
